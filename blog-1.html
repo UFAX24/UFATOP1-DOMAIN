@@ -160,9 +160,9 @@
 							<li class=""><a href="matches-replay.html">Match Replay</a></li>
 						</ul>
 					</li>
-					<li class=""><a href="#">News</a>
+					<li class="active"><a href="#">News</a>
 						<ul class="main-nav__sub">
-							<li class=""><a href="blog-1.html">News v1</a></li>
+							<li class="active"><a href="blog-1.html">News v1</a></li>
 							<li class=""><a href="blog-2.html">News v2</a></li>
 							<li class=""><a href="blog-3.html">News v3</a></li>
 							<li class=""><a href="blog-4.html">News v4</a></li>
@@ -179,7 +179,7 @@
 										<ul class="col-md-4">
 											<li class=""><a href="index.html">Landing Image</a></li>
 											<li class=""><a href="index-2.html">Landing Video</a></li>
-											<li class=""><a href="blog-1.html">News v1</a></li>
+											<li class="active"><a href="blog-1.html">News v1</a></li>
 											<li class=""><a href="blog-2.html">News v2</a></li>
 											<li class=""><a href="blog-3.html">News v3</a></li>
 											<li class=""><a href="blog-4.html">News v4</a></li>
@@ -195,7 +195,7 @@
 										</ul>
 										<ul class="col-md-4">
 											<li class=""><a href="management-and-staff.html">MGMT & Staff</a></li>
-											<li class="active"><a href="streams-archive.html">Streams Page</a></li>
+											<li class=""><a href="streams-archive.html">Streams Page</a></li>
 											<li class=""><a href="partners.html">Our Partners</a></li>
 											<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
 											<li class=""><a href="features-typography.html">Typography</a></li>
@@ -280,6 +280,60 @@
 		
 			<!-- Header Actions -->
 			<div class="header-actions">
+					<div class="header-pagination">
+						<a href="#" class="header-scroll-arrow header-scroll-arrow--left">
+							<svg role="img" class="df-icon df-icon--left-arrow">
+								<use xlink:href="assets/img/necromancers.svg#left-arrow"/>
+							</svg>
+						</a>
+						<ol class="header-pagination--list">
+							<li><a href="#">01</a></li>
+							<li><a href="#">02</a></li>
+							<li><span>...</span></li>
+							<li><a href="#">08</a></li>
+						</ol>
+						<a href="#" class="header-scroll-arrow header-scroll-arrow--right">
+							<svg role="img" class="df-icon df-icon--right-arrow">
+								<use xlink:href="assets/img/necromancers.svg#right-arrow"/>
+							</svg>
+						</a>
+					</div>
+					<div class="header-filter-toggle">
+						<svg role="img" class="df-icon df-icon--filter">
+							<use xlink:href="assets/img/necromancers.svg#filter"/>
+						</svg>
+						<div class="filter-menu">
+							<form action="#" class="filter-menu__form">
+								<div class="filter-menu__select">
+									<label class="filter-menu__label">Category</label>
+									<select class="cs-select">
+										<option value="" selected>All Categories</option>
+										<option value="">Esports</option>
+										<option value="">Gaming</option>
+										<option value="">Videos</option>
+									</select>
+								</div>
+								<div class="filter-menu__select">
+									<label class="filter-menu__label">Filter By</label>
+									<select class="cs-select">
+										<option value="" selected>Article Date</option>
+										<option value="">Comments</option>
+										<option value="">Popularity</option>
+									</select>
+								</div>
+								<div class="filter-menu__select">
+									<label class="filter-menu__label">Order</label>
+									<select class="cs-select">
+										<option value="" selected>Ascending</option>
+										<option value="">Descending</option>
+									</select>
+								</div>
+								<div class="filter-menu__submit">
+									<button type="submit" class="btn btn-primary btn-sm btn-block">Filter News</button>
+								</div>
+							</form>
+						</div>
+					</div>
 				<div class="header-top-bar-toggle d-md-none hide">
 					<svg role="img" class="df-icon df-icon--joystick">
 						<use xlink:href="assets/img/necromancers.svg#joystick"/>
@@ -354,213 +408,228 @@
 		================================================== -->
 		<main class="site-content" id="wrapper">
 			
-			<div class="page-heading page-heading--loop page-heading--streams-archive bg-image bg--ph-04">
-				<div class="page-heading__subtitle h5 color-warning">Necromancers</div>
-				<h1 class="page-heading__title h2">Streams </br>Archive</h1>
-				<div class="page-heading__body">
-					<svg role="img" class="df-icon df-icon--twitch-word-logo">
-						<use xlink:href="assets/img/necromancers.svg#twitch-word-logo"/>
-					</svg>
-					<div class="h5">Relive your favourite </br>livestreams!</div>
-					<p>Select your <span class="color-warning font-bold">favourite streamer</span> to filter the videos, or click the Necromancers logo to checkout all of them!</p>
+			<div class="widget-area widger-area--before-loop">
+				<div class="widget widget-carousel slick-slider">
+					<article class="widget-carousel__item post slick-slide">
+						<div class="post__thumbnail">
+							<img src="assets/img/samples/widget-posts-carousel-img-01.jpg" alt="">
+						</div>
+						<div class="post__body">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-primary">
+									<a href="#">Esports</a>
+								</li>
+							</ul>
+							<h2 class="post__title"><a href="blog-post.html">Fuzzydeath broke a new kills per minute record</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">July 29th, 2018</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article class="widget-carousel__item post slick-slide">
+						<div class="post__thumbnail">
+							<img src="assets/img/samples/widget-posts-carousel-img-02.jpg" alt="">
+						</div>
+						<div class="post__body">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Gaming</a>
+								</li>
+							</ul>
+							<h2 class="post__title"><a href="blog-post.html">New stealth missions were added to fortdaite</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">July 26th, 2018</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article class="widget-carousel__item post slick-slide">
+						<div class="post__thumbnail">
+							<img src="assets/img/samples/widget-posts-carousel-img-03.jpg" alt="">
+						</div>
+						<div class="post__body">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Gaming</a>
+								</li>
+							</ul>
+							<h2 class="post__title"><a href="blog-post.html">Gunslinger is a really cool new class for Xenowatch</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">July 22nd, 2018</a>
+								</li>
+							</ul>
+						</div>
+					</article>
 				</div>
-				<!-- Filter -->
-				<ul class="streams-filter filter js-filter list-unstyled">
-			
-					<li>
-						<button class="btn active" data-filter="*">
-							<img src="assets/img/samples/streams-filter-avatar-01.png" alt="">
-						</button>
-					</li>
-					<li>
-						<button class="btn " data-filter=".stream-1">
-							<img src="assets/img/samples/streams-filter-avatar-02.png" alt="">
-						</button>
-					</li>
-					<li>
-						<button class="btn " data-filter=".stream-2">
-							<img src="assets/img/samples/streams-filter-avatar-03.png" alt="">
-						</button>
-					</li>
-					<li>
-						<button class="btn " data-filter=".stream-3">
-							<img src="assets/img/samples/streams-filter-avatar-04.png" alt="">
-						</button>
-					</li>
-					<li>
-						<button class="btn " data-filter=".stream-4">
-							<img src="assets/img/samples/streams-filter-avatar-05.png" alt="">
-						</button>
-					</li>
-					<li>
-						<button class="btn " data-filter=".stream-5">
-							<img src="assets/img/samples/streams-filter-avatar-06.png" alt="">
-						</button>
-					</li>
-			
-				</ul>
-				<!-- Filter / End -->
 			</div>
-			<div class="content streams-archive">
+
 			
-				<article class="stream stream-1 has-post-thumbnail" data-id="playhearthstone" data-controls="true" data-provider="twitch" data-thumbnail="assets/img/samples/stream-img-01.jpg" data-easy-embed>
-					<div class="stream__thumbnail">
-						<img src="assets/img/samples/stream-img-01.jpg" alt="">
+			<div class="content blog-layout--style-1">
+			
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+			
+						<a href="blog-post.html"><img src="assets/img/samples/news-v1-post-img-01.jpg" alt=""></a>
+			
+			
 					</div>
-					<div class="stream__icon"></div>
-					<div class="stream__header">
-						<div class="stream__info">
-							<div class="stream__avatar">
-								<img src="assets/img/samples/streams-archive-avatar-01.jpg" alt="">
-							</div>
-							<h6 class="stream__title">
-								Davikinger plays &quot;Clash of eternity&quot;<span class="badge badge-danger badge-live">Live</span>
-							</h6>
-							<div class="stream__date">August 3rd, 2018</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Gaming</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="blog-post.html">League of heroes presented a new character</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 15th, 2018</a>
+								</li>
+							</ul>
 						</div>
-						<a href="#" class="btn btn-twitch btn-twitch--advanced">
-							<i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow Davikinger90</span>
-						</a>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.
+						</div>
 					</div>
 				</article>
-				<article class="stream stream-2 has-post-thumbnail" data-id="weplayesport_ru" data-controls="true" data-provider="twitch" data-thumbnail="assets/img/samples/stream-img-02.jpg" data-easy-embed>
-					<div class="stream__thumbnail">
-						<img src="assets/img/samples/stream-img-02.jpg" alt="">
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+			
+						<a href="blog-post.html"><img src="assets/img/samples/news-v1-post-img-02.jpg" alt=""></a>
+			
+			
 					</div>
-					<div class="stream__icon"></div>
-					<div class="stream__header">
-						<div class="stream__info">
-							<div class="stream__avatar">
-								<img src="assets/img/samples/streams-archive-avatar-02.jpg" alt="">
-							</div>
-							<h6 class="stream__title">
-								The magimons adventure with G-Huntress
-							</h6>
-							<div class="stream__date">August 3rd, 2018</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-success">
+									<a href="#">eSports</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="blog-post.html">The Necromancers emerge victorious once more!</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 14th, 2018</a>
+								</li>
+							</ul>
 						</div>
-						<a href="#" class="btn btn-twitch btn-twitch--advanced">
-							<i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow G-Huntress</span>
-						</a>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.
+						</div>
 					</div>
 				</article>
-				<article class="stream stream-1 stream-3 stream-5 has-post-thumbnail" data-id="sc2showtime" data-controls="true" data-provider="twitch" data-thumbnail="assets/img/samples/stream-img-03.jpg" data-easy-embed>
-					<div class="stream__thumbnail">
-						<img src="assets/img/samples/stream-img-03.jpg" alt="">
+
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+			
+						<a href="blog-post.html"><img src="assets/img/samples/news-v1-post-img-03.jpg" alt=""></a>
+			
+			
 					</div>
-					<div class="stream__icon"></div>
-					<div class="stream__header">
-						<div class="stream__info">
-							<div class="stream__avatar">
-								<img src="assets/img/samples/streams-archive-avatar-03.jpg" alt="">
-							</div>
-							<h6 class="stream__title">
-								Super plumber bros speedrun for charity!
-							</h6>
-							<div class="stream__date">July 27th, 2018</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-success">
+									<a href="#">eSports</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="blog-post.html">Matt Rodgers talks about becoming a pro gamer</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 10th, 2018</a>
+								</li>
+							</ul>
 						</div>
-						<a href="#" class="btn btn-twitch btn-twitch--advanced">
-							<i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow Julie_Noire</span>
-						</a>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.
+						</div>
 					</div>
 				</article>
-				<article class="stream stream-3 stream-4 has-post-thumbnail" data-id="hashinshin" data-controls="true" data-provider="twitch" data-thumbnail="assets/img/samples/stream-img-04.jpg" data-easy-embed>
-					<div class="stream__thumbnail">
-						<img src="assets/img/samples/stream-img-04.jpg" alt="">
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+			
+						<a href="blog-post.html"><img src="assets/img/samples/news-v1-post-img-04.jpg" alt=""></a>
+			
+			
 					</div>
-					<div class="stream__icon"></div>
-					<div class="stream__header">
-						<div class="stream__info">
-							<div class="stream__avatar">
-								<img src="assets/img/samples/streams-archive-avatar-04.jpg" alt="">
-							</div>
-							<h6 class="stream__title">
-								24 hours stream before the goddess of war launch
-							</h6>
-							<div class="stream__date">July 14th, 2018</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Gaming</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="blog-post.html">Magimons will have a new class: Pyromancer</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 8th, 2018</a>
+								</li>
+							</ul>
 						</div>
-						<a href="#" class="btn btn-twitch btn-twitch--advanced">
-							<i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow Davikinger90</span>
-						</a>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.
+						</div>
 					</div>
 				</article>
-				<article class="stream stream-2 stream-3 has-post-thumbnail" data-id="ratirl" data-controls="true" data-provider="twitch" data-thumbnail="assets/img/samples/stream-img-01.jpg" data-easy-embed>
-					<div class="stream__thumbnail">
-						<img src="assets/img/samples/stream-img-01.jpg" alt="">
-					</div>
-					<div class="stream__icon"></div>
-					<div class="stream__header">
-						<div class="stream__info">
-							<div class="stream__avatar">
-								<img src="assets/img/samples/streams-archive-avatar-01.jpg" alt="">
+				<article class="post has-post-thumbnail  post--video">
+					<div class="post__thumbnail">
+			
+			
+						<a href="https://www.youtube.com/watch?v&#x3D;XE0fU9PCrWE" class="mp_iframe">
+							<img src="assets/img/samples/news-v4-post-img-04.jpg" alt="">
+							<div class="post__thumbnail-icon">
+								<span class="lightbox__icon"><!----></span>
 							</div>
-							<h6 class="stream__title">
-								Davikinger plays &quot;Clash of eternity&quot;<span class="badge badge-danger badge-live">Live</span>
-							</h6>
-							<div class="stream__date">August 3rd, 2018</div>
-						</div>
-						<a href="#" class="btn btn-twitch btn-twitch--advanced">
-							<i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow Davikinger90</span>
 						</a>
+			
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-danger">
+									<a href="#">Videos</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="blog-post.html">Jack shows a sneak peak of the new loh expansion</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 3rd, 2018</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.
+						</div>
 					</div>
 				</article>
-				<article class="stream stream-5 stream-4 has-post-thumbnail" data-id="dafran" data-controls="true" data-provider="twitch" data-thumbnail="assets/img/samples/stream-img-02.jpg" data-easy-embed>
-					<div class="stream__thumbnail">
-						<img src="assets/img/samples/stream-img-02.jpg" alt="">
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+			
+						<a href="blog-post.html"><img src="assets/img/samples/news-v4-post-img-06.jpg" alt=""></a>
+			
+			
 					</div>
-					<div class="stream__icon"></div>
-					<div class="stream__header">
-						<div class="stream__info">
-							<div class="stream__avatar">
-								<img src="assets/img/samples/streams-archive-avatar-02.jpg" alt="">
-							</div>
-							<h6 class="stream__title">
-								The magimons adventure with G-Huntress
-							</h6>
-							<div class="stream__date">August 3rd, 2018</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-success">
+									<a href="#">eSports</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="blog-post.html">The team tested the new vr pod at 2018 gamexcon</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">July 24th, 2018</a>
+								</li>
+							</ul>
 						</div>
-						<a href="#" class="btn btn-twitch btn-twitch--advanced">
-							<i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow G-Huntress</span>
-						</a>
-					</div>
-				</article>
-				<article class="stream stream-4 has-post-thumbnail" data-id="mcconnellret" data-controls="true" data-provider="twitch" data-thumbnail="assets/img/samples/stream-img-03.jpg" data-easy-embed>
-					<div class="stream__thumbnail">
-						<img src="assets/img/samples/stream-img-03.jpg" alt="">
-					</div>
-					<div class="stream__icon"></div>
-					<div class="stream__header">
-						<div class="stream__info">
-							<div class="stream__avatar">
-								<img src="assets/img/samples/streams-archive-avatar-03.jpg" alt="">
-							</div>
-							<h6 class="stream__title">
-								Super plumber bros speedrun for charity!
-							</h6>
-							<div class="stream__date">July 27th, 2018</div>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.
 						</div>
-						<a href="#" class="btn btn-twitch btn-twitch--advanced">
-							<i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow Julie_Noire</span>
-						</a>
-					</div>
-				</article>
-				<article class="stream stream-1 stream-5 has-post-thumbnail" data-id="dakotaz" data-controls="true" data-provider="twitch" data-thumbnail="assets/img/samples/stream-img-04.jpg" data-easy-embed>
-					<div class="stream__thumbnail">
-						<img src="assets/img/samples/stream-img-04.jpg" alt="">
-					</div>
-					<div class="stream__icon"></div>
-					<div class="stream__header">
-						<div class="stream__info">
-							<div class="stream__avatar">
-								<img src="assets/img/samples/streams-archive-avatar-04.jpg" alt="">
-							</div>
-							<h6 class="stream__title">
-								24 hours stream before the goddess of war launch
-							</h6>
-							<div class="stream__date">July 14th, 2018</div>
-						</div>
-						<a href="#" class="btn btn-twitch btn-twitch--advanced">
-							<i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow Davikinger90</span>
-						</a>
 					</div>
 				</article>
 			
@@ -700,14 +769,14 @@
 						<!-- Mobile Navigation -->
 						<nav class="mobile-nav">
 							<ul class="mobile-nav__list">
-								<li class="">
+								<li class="active">
 									<a href="#">Main Pages</a>
 									<ul class="mobile-nav__sub">
 										<li class=""><a href="index.html">Landing Image</a></li>
 										<li class=""><a href="index-2.html">Landing Video</a></li>
 										<li class=""><a href="home.html">Home page</a></li>
 										<li class=""><a href="blog-post.html">Post Page</a></li>
-										<li class=""><a href="blog-1.html">News v1</a></li>
+										<li class="active"><a href="blog-1.html">News v1</a></li>
 										<li class=""><a href="blog-2.html">News v2</a></li>
 										<li class=""><a href="blog-3.html">News v3</a></li>
 										<li class=""><a href="blog-4.html">News v4</a></li>
@@ -719,7 +788,7 @@
 										<li class=""><a href="features-contact-us.html">Contact Us</a></li>
 										<li class=""><a href="features-faqs.html">FAQs</a></li>
 										<li class=""><a href="management-and-staff.html">Management & Staff</a></li>
-										<li class="active"><a href="streams-archive.html">Streams Page</a></li>
+										<li class=""><a href="streams-archive.html">Streams Page</a></li>
 										<li class=""><a href="partners.html">Our Partners</a></li>
 										<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
 										<li class=""><a href="features-typography.html">Typography</a></li>
@@ -1951,7 +2020,7 @@
 									<li class=""><a href="matches-replay.html">Match Replay</a></li>
 								</ul>
 							</li>
-							<li class="">
+							<li class="active">
 								<a href="blog-1.html">News</a>
 							</li>
 							<li>
@@ -1962,7 +2031,7 @@
 											<li class=""><a href="index.html">Landing Image</a></li>
 											<li class=""><a href="index-2.html">Landing Video</a></li>
 											<li class=""><a href="home.html">Home page</a></li>
-											<li class=""><a href="blog-1.html">News v1</a></li>
+											<li class="active"><a href="blog-1.html">News v1</a></li>
 											<li class=""><a href="blog-2.html">News v2</a></li>
 											<li class=""><a href="blog-3.html">News v3</a></li>
 											<li class=""><a href="blog-4.html">News v4</a></li>
@@ -1977,7 +2046,7 @@
 											<li class=""><a href="features-faqs.html">FAQs</a></li>
 											<li class=""><a href="features-contact-us.html">Contact Us</a></li>
 											<li class=""><a href="management-and-staff.html">Management & Staff</a></li>
-											<li class="active"><a href="streams-archive.html">Streams Page</a></li>
+											<li class=""><a href="streams-archive.html">Streams Page</a></li>
 											<li class=""><a href="partners.html">Our Partners</a></li>
 										</ul>
 										<ul class="col-md-12 col-lg-4">

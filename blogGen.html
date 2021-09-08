@@ -90,9 +90,9 @@
 	<link href="assets/css/custom.css" rel="stylesheet">
 </head>
 
-<body class="site-layout--horizontal preloader-is--active" onload="listdata()">
+<body class="preloader-is--active ">
 
-	<div class="site-wrapper">
+	<div class="site-wrapper site-layout--default">
 
 		<!-- Header
 		================================================== -->
@@ -102,78 +102,22 @@
 		<!-- Content
 		================================================== -->
 		<main class="site-content" id="wrapper">
-			
-			<div class="widget-area widger-area--before-loop">
-				<div class="widget widget-carousel slick-slider">
-					<article class="widget-carousel__item post slick-slide">
-						
-						<!-- <iframe src="https://onefootball.com/en/matches" frameborder="0" width="100%" height="760" allowfullscreen allow='autoplay; fullscreen' style="width:100%;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"></iframe> -->
-						<div class="post__thumbnail">
-							<img src="https://www.ufagm.com/wp-content/uploads/2021/02/%E0%B8%A2%E0%B8%B9%E0%B8%9F%E0%B9%88%E0%B8%B2%E0%B8%AA%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%9588.png" alt="">
-						</div>
-						<div class="post__body">
-							<ul class="post__cats list-unstyled">
-								<li class="post__cats-item color-primary">
-									<a href="#">Esports</a>
-								</li>
-							</ul>
-							<h2 class="post__title"><a href="blog-post.html">Fuzzydeath broke a new kills per minute record</a></h2>
-							<ul class="post__meta list-unstyled">
-								<li class="post__meta-item post__meta-item--date">
-									<span id="ftoday"></span>
-								</li>
-							</ul>
-						</div>
-					</article>
-					<article class="widget-carousel__item post slick-slide">
-						<div class="post__thumbnail">
-							<img src="https://s3-ap-southeast-1.amazonaws.com/images.ufaprimo.com/production/public/sso/front_promotions/0.19404614934826125-ufaboss-4-fs8.png" alt="">
-						</div>
-						<div class="post__body">
-							<ul class="post__cats list-unstyled">
-								<li class="post__cats-item color-warning">
-									<a href="#">Gaming</a>
-								</li>
-							</ul>
-							<h2 class="post__title"><a href="blog-post.html">New stealth missions were added to fortdaite</a></h2>
-							<ul class="post__meta list-unstyled">
-								<li class="post__meta-item post__meta-item--date">
-									<span id="ftoday"></span>
-								</li>
-							</ul>
-						</div>
-					</article>
-					<article class="widget-carousel__item post slick-slide">
-						<div class="post__thumbnail">
-							<img src="https://u12bt.com/wp-content/uploads/2021/07/%E0%B8%AA%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%95Joker-Four-Dragons-%E0%B8%88%E0%B8%B2%E0%B8%81Igoal88.png" alt="">
-						</div>
-						<div class="post__body">
-							<ul class="post__cats list-unstyled">
-								<li class="post__cats-item color-warning">
-									<a href="#">Gaming</a>
-								</li>
-							</ul>
-							<h2 class="post__title"><a href="blog-post.html">Gunslinger is a really cool new class for Xenowatch</a></h2>
-							<ul class="post__meta list-unstyled">
-								<li class="post__meta-item post__meta-item--date">
-									<span id="ftoday"></span>
-								</li>
-							</ul>
-						</div>
-					</article>
+			<div class="site-content__inner">
+				<div class="site-content__holder" id="DataPostGen">
+					<!-- Post -->
+					
+					<!-- Post / End -->
+					<!-- Post Comments -->
+					
+					<!-- Post Comments / End -->
+					<!-- Comment Form -->
+					
+					<!-- Comment Form / End -->
 				</div>
 			</div>
-			<div class="content blog-layout--style-4">
-			
-				<div id="postfootball"></div>
-			
-			
-			
-			
-			</div>
 		</main>
-
 		
+
 		<!-- Overlay -->
 		<div class="site-overlay"></div>
 		<!-- Overlay / End -->
@@ -183,15 +127,14 @@
 		<div data-include="cart"></div>
 
 		<!-- Cart Panel / End -->
-		<!-- Search Panel -->
-		<div data-include="searchpanel"></div>
+		<!-- Search Panel 
+		<div data-include="searchpanel"></div>-->
 		<!-- Search Panel / End -->
+
 		<!-- Menu Panel -->
-		
+		<div class="">
 		<div data-include="header2"></div>
-
-		<!-- Menu Panel / End -->
-
+	
 
 	<div class="preloader-overlay">
 		<div id="js-preloader" class="preloader">
@@ -203,38 +146,79 @@
 			</div>
 		</div>
 	</div>
-	
 
+	<!-- The cursor elements -->
+	<div class="df-custom-cursor-wrap">
+		<div id="df-custom-cursor"></div>
+	</div>
 	<script>
-		async function listdata() {
+	function dataGen(){
+    document.getElementById("DataPostGen").innerHTML = 
+	`<article class="post post--single">		
+			<figure class="post__thumbnail">
+				<img src="assets/img/br1.gif" style="padding: auto;" alt="pr01">
+			</figure>
+			<ul class="post__sharing">
+				<li class="post__sharing-item post__sharing-item--menu"><a href="home.html"><i>&nbsp;</i></a></li>
+				<li class="post__sharing-item"><a href="https://www.facebook.com/ufax249999/"></a></li>
+				<li class="post__sharing-item"><a href="https://twitter.com/ufax24"></a></li>
+				<li class="post__sharing-item post__sharing-item--comments">
+					<a href="#comments">
+						<span>506</span>
+						<svg role="img" class="df-icon df-icon--comments-small">
+							<use xlink:href="assets/img/necromancers.svg#comments-small"/>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<div class="post__header">
+				<div class="post__cats h6">
+					<span class="color-warning">Gaming</span>
+				</div>
+				<h2 class="post__title h3">League of heroes presented a new character</h2>
+				<div class="post__meta">
+					<span class="meta-item meta-item--date">August 15th, 2018</span>
+				</div>
+			</div>
+			<div class="post__body">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim en veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea derum commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum modi tempora incidunt.
+				</p>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo lorem inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora der incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat?
+				</p>
+				<figure>
+					<img src="assets/img/samples/news-post-img-02.jpg" alt="">
+					<figcaption>This is "Stormy" the last character that was introduced to the game</figcaption>
+				</figure>
+				<p>
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.
+				</p>
+			</div>
+		</article>`;
+		}
+	</script>
+	<script>
+
+
+		async function genPostData() {
 		  try {
-			const response = await axios.get('https://ufapro888s.co/wp-json/wp/v2/posts?_fields[]=content&_fields[]=title&_fields[]=link&_fields[]=date_gmt');
+			const response = await axios.get('https://ufax24.com/wp-json/wp/v2/posts?_fields[]=content&_fields[]=title&_fields[]=link&_fields[]=date_gmt');
 			var Data = response.data;
 			var setPost = [];
 			Data.forEach(function(element) {
 			var content = element.content.rendered;
 			var date_gmt = element.date_gmt;
 			var link = element.link;
-			var title = element.title.rendered;
-			var imgss = [];
 			var color = ['color-warning','color-success','color-primary'];
 			var colorRandom = color[Math.floor(Math.random() * color.length)]
-			var vids = content.match(/http[^>]*mp4/gm);
+			var title = element.title.rendered;
 			var imgs = content.match(/http[^>]*jpg/gm);
-			if(imgs === null){
-				var imgs = "https://ufa-bet.bet/wp-content/uploads/2020/12/UFABET.png"
-				imgss.push(imgs);
-			}else{
-				var imgs = content.match(/http[^>]*jpg/gm);
-				imgss.push(imgs);
-			
-			}
-			//console.log(imgss)
 			var listpost = 
 
 			`<article class="post has-post-thumbnail ">
 			  <div class="post__thumbnail">
-				  <a href="${link}"><img src="${imgss}" alt="ufax-${date_gmt}"></a>
+				  <a href="${link}"><img src="${imgs}" alt="ufax-${date_gmt}"></a>
 			  </div>
 			  <div class="post__body">
 				  <div class="post__header">
@@ -254,48 +238,25 @@
 					  ${title}
 				  </div>
 			  </div>
-		    </article>`
+		  </article>`
 			setPost.push(listpost)
-		
+			  
 			})
 			//console.log(setPost)
-			document.getElementById('postfootball').insertAdjacentHTML('beforeend', setPost);
+			document.getElementById('postpic').insertAdjacentHTML('beforeend', setPost);
 			
 			//document.getElementById('postpic').appendChild(postpic);
 			//console.log(content);
 		  
 		  } catch (error) {
-			console.error(error);
+			//console.error(error);
 			 }
 		  }
 
 	  </script>
-	  	<script>
-			const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "June",
-	  "July", "Aug", "Sep", "Oct", "Nov", "Dec"
-	];
-			var today = new Date();
-			var fdate = today.getDate() + ' - ' + (today.getMonth() + 1) + ' - ' + today.getFullYear();
-			var dtody = today.getDate();
-			var mtoday = (today.getMonth() + 1);
-			var nmtoday = (monthNames[today.getMonth()])
-			var ytoday =  today.getFullYear();
-
-			document.getElementById('ftoday').append(dtody+" "+nmtoday+" "+ytoday);
-			//document.getElementById('dtoday').append(dtody);
-			//document.getElementById('nmtoday').append(nmtoday);
-			//document.getElementById('ytoday').appendChild(ytoday);
-			console.log(ftoday)
-		</script>
-	<!-- The cursor elements -->
-	<div class="df-custom-cursor-wrap">
-		<div id="df-custom-cursor"></div>
-	</div>
-
 	<!-- Javascript Files
 	================================================== -->
 	<!-- Core JS -->
-	
 	<script src="assets/vendor/jquery/jquery.min.js"></script>
 	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
 	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
