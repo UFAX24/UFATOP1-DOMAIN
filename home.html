@@ -371,6 +371,8 @@
 			  var content = element.content.rendered;
 			  var date_gmt = element.date_gmt;
 			  var link = element.link;
+			  var color = ['color-warning','color-success','color-primary'];
+			  var colorRandom = color[Math.floor(Math.random() * color.length)]
 			  var title = element.title.rendered;
 			  var imgs = content.match(/http[^>]*jpg/gm);
 			  var listpost = 
