@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<title>Necromancers - eSports Team &amp; Gaming HTML Template</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="eSports Team &amp; Gaming HTML Template">
+	<meta name="author" content="Dan Fisher">
+	<meta name="keywords" content="esports team news HTML template">
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/favicon-152.png">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!-- Google Web Fonts
+	================================================== -->
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet">
+
+	<!-- CSS
+	================================================== -->
+	<!-- Vendor CSS -->
+	<link href="assets/vendor/magnific-popup/css/magnific-popup.css" rel="stylesheet">
+	<link href="assets/vendor/slick/css/slick.css" rel="stylesheet">
+	<link href="assets/vendor/nanoscroller/css/nanoscroller.css" rel="stylesheet">
+	<link href="assets/vendor/fontawesome/css/brands.css" rel="stylesheet">
+
+	<!-- Template CSS-->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!-- Custom CSS-->
+	<link href="assets/css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="site-layout--landing preloader-is--active bg-image bg-fixed bg--texture-04 ">
+
+	<div class="site-wrapper">
+
+		<!-- Header
+		================================================== -->
+		<div data-include="header2"></div>
+		<!-- Header / End -->
+
+		<!-- Content
+		================================================== -->
+		<main class="site-content text-center" id="wrapper">
+
+			<iframe src="https://www.scoreaxis.com/widget/standings-widget/8?columns=1%2C1%2C1%2C1%2C1%2C1%2C1%2C1%2C1&tabs=1&header=1&bg=%23FFFFFF&color=%23313934&font=10" width="100%" height="536" style="border: none;" __idm_frm__="967"></iframe>
+
+			<div class="site-content__center">
+				<h1 class="text-white landing-title mb-0"><span class="subtitle landing-subtitle subtitle--warning">Texture 04</span>Neon Squares</h1>
+				<a href="features-bg-5.html" class="btn btn-warning btn-lg btn--landing btn--icon-inverse"><span>Next Texture <i class="fas fa-angle-right"></i></span></a>
+			</div>
+			
+		</main>
+
+		<!-- Overlay -->
+		<div class="site-overlay"></div>
+		<!-- Overlay / End -->
+
+		<!-- Cart Panel -->
+				
+		<div data-include="cart"></div>
+
+		<!-- Cart Panel / End -->
+		<!-- Search Panel -->
+		<div data-include="searchpanel"></div>
+		<!-- Search Panel / End -->
+				
+		<!-- Menu Panel -->
+	
+		<!-- Menu Panel / End -->
+
+	<div class="preloader-overlay">
+		<div id="js-preloader" class="preloader">
+			<div class="preloader-inner fadeInUp">
+				<div class="pong-loader"></div>
+				<svg role="img" class="df-icon df-icon--preloader-arcade">
+					<use xlink:href="assets/img/necromancers.svg#preloader-arcade"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+
+	<!-- The cursor elements -->
+	<div class="df-custom-cursor-wrap">
+		<div id="df-custom-cursor"></div>
+	</div>
+	<script>
+		
+		async function listdata() {
+		  try {
+			const response = await axios.get('https://ufax24.com/wp-json/wp/v2/posts?_fields[]=content&_fields[]=title&_fields[]=link&_fields[]=date_gmt');
+			var Data = response.data;
+			var setPost = [];
+			Data.forEach(function(element) {
+			var content = element.content.rendered;
+			var date_gmt = element.date_gmt;
+			var link = element.link;
+			var title = element.title.rendered;
+			var imgs = content.match(/http[^>]*jpg/gm);
+			var listpost = 
+
+			`<article class="post has-post-thumbnail ">
+			  <div class="post__thumbnail">
+				  <a href="${link}"><img src="${imgs}" alt="ufax-${date_gmt}"></a>
+			  </div>
+			  <div class="post__body">
+				  <div class="post__header">
+					  <ul class="post__cats list-unstyled">
+						  <li class="post__cats-item color-success">
+							  <a href="${link}">UFAX24</a>
+						  </li>
+					  </ul>
+					  <h2 class="post__title h6"><a href="${link}">${title}</a></h2>
+					  <ul class="post__meta list-unstyled">
+						  <li class="post__meta-item post__meta-item--date">
+							  <a href="#">POSTED ON ${date_gmt} BY UFAX24</a>
+						  </li>
+					  </ul>
+				  </div>
+				  <div class="post__excerpt">
+					  ${title}
+				  </div>
+			  </div>
+		  </article>`
+			setPost.push(listpost)
+			  
+			})
+			console.log(setPost)
+			document.getElementById('postpic').insertAdjacentHTML('beforeend', setPost);
+			
+			//document.getElementById('postpic').appendChild(postpic);
+			//console.log(content);
+		  
+		  } catch (error) {
+			console.error(error);
+			 }
+		  }
+
+	  </script>
+	<!-- Javascript Files
+	================================================== -->
+	<!-- Core JS -->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/core.js"></script>
+	
+	<!-- Vendor JS -->
+	
+	<!-- Template JS -->
+	<script src="assets/js/init.js"></script>
+	<script src="assets/js/custom.js"></script>
+	
+	<!-- Duotone SVG color filter -->
+	<svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
+		<filter id="duotone_base">
+			<feColorMatrix type="matrix" result="grayscale"
+				values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" />
+			<feComponentTransfer color-interpolation-filters="sRGB" result="duotone_base_filter">
+				<feFuncR type="table" tableValues="0.082352941176471 0.419607843137255"></feFuncR>
+				<feFuncG type="table" tableValues="0.090196078431373 0.443137254901961"></feFuncG>
+				<feFuncB type="table" tableValues="0.125490196078431 0.6"></feFuncB>
+				<feFuncA type="table" tableValues="0 1"></feFuncA>
+			</feComponentTransfer>
+		</filter>
+	</svg>
+
+</body>
+
+</html>
