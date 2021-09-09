@@ -1,0 +1,113 @@
+/*
+Theme Name:		Hello Elementor Child
+Theme URI:		https://elementor.com/
+Description:	Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author:			Elementor Team
+Author URI:		https://elementor.com/
+Template:		hello-elementor
+Version:		1.0.0
+Text Domain:	hello-elementor-child
+Tags:           flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+
+/*
+    Add your custom styles here
+*/
+
+.bdt-button-icon-align-left .fa-500px:before {
+    content: url("../images/premier-league-new-logo.png") !important;
+}
+
+.bdt-button-icon-align-left .fa-adn:before {
+    content: url("../images/thai-logo.png") !important;
+}
+
+.bdt-button-icon-align-left .fa-address-book:before {
+    content: url("../images/bundes-logo.png") !important;
+}
+
+.bdt-button-icon-align-left .fa-address-book-o:before {
+    content: url("../images/ligue1-logo.png") !important;
+}
+
+.bdt-button-icon-align-left .fa-amazon:before {
+    content: url("../images/laliga-logo-1.png") !important;
+}
+
+.bdt-button-icon-align-left .fa-anchor:before {
+    content: url("../images/serie-a.png") !important;
+}
+
+.head-title {
+    padding-left: 10px !important;
+    margin: 1px;
+}
+
+.head-title-sub {
+    color: #fff !important;
+    font-size: 18px;
+}
+
+.-league-bg {
+    background: #8a8a8a !important;
+    background: -moz-linear-gradient(top, #8a8a8a 0%, #1c1c1c 50%, #121212 51%, #000000 100%) !important;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #8a8a8a), color-stop(50%, #1c1c1c), color-stop(51%, #121212), color-stop(100%, #000000)) !important;
+    background: -webkit-linear-gradient(top, #8a8a8a 0%, #1c1c1c 50%, #121212 51%, #000000 100%) !important;
+    background: -o-linear-gradient(top, #8a8a8a 0%, #1c1c1c 50%, #121212 51%, #000000 100%) !important;
+    background: -ms-linear-gradient(top, #8a8a8a 0%, #1c1c1c 50%, #121212 51%, #000000 100%) !important;
+    background: linear-gradient(to bottom, #8a8a8a 0%, #1c1c1c 50%, #121212 51%, #000000 100%) !important;
+}
+
+
+/*#channel .sp_time{
+    background-color: #d2d2d2d2;
+}
+#channel .link {
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #d2d2d2d2;
+}
+#channel .live {
+	color : #f00;
+    font-style: italic;
+    font-weight: bold;
+}
+#channel .sp_time.-live{
+    background-color: #f00;
+    color: #fff;
+}*/
+
+#live {
+    color: #f00;
+}
+
+.baner_ads {
+    text-align: center;
+    margin: 5px 0;
+}
+
+#main-menu li img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+#main-menu li a {
+    display: block;
+    text-align: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #main-menu li {
+        width: 25%;
+    }
+    /* #main-menu li img {
+        max-width: 35%;
+    } */
+}
