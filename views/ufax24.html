@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th-TH">
+<head>
+  <meta charset="utf-8" />
+  <title>UFAX Carousel</title>
+  <meta name="description" content="Generated with UFAX"/>
+  <meta name="url" content="http://projectestac.github.io/UFAX/"/>
+</head>
+<body style="padding:0;margin:0">
+  <div style="width:100%;height:100vh;margin:0;padding:0;overflow:hidden;">
+    <iframe src="" style="width:100%;height:100%;" name="view" title="Page view" allowFullScreen="true"
+      onLoad="window.scrollTo(0, 0)">
+      <p>Your browser does not support iframes!</p>
+    </iframe>
+  </div>
+  <script>
+    const urls = ["https://ufax24.com/2021/07/15/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%a2%e0%b8%b9%e0%b8%9f%e0%b9%88%e0%b8%b2%e0%b9%80%e0%b8%9a%e0%b8%97-%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b9%83%e0%b8%ab%e0%b8%8d%e0%b9%88/",
+      "https://ufax24.com/2021/09/01/%e0%b8%97%e0%b8%b5%e0%b9%80%e0%b8%94%e0%b9%87%e0%b8%94%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%aa%e0%b8%a1%e0%b8%b1%e0%b8%84%e0%b8%a3%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b8%a7%e0%b8%b1/",
+      "https://ufax24.com/banned-isp/",
+      "https://ufax24.com/2021/08/17/%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a1%e0%b8%b5%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%9a%e0%b8%97%e0%b8%b5%e0%b9%88/",
+      "https://ufax24.com/2021/07/12/%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b9%84%e0%b8%a1/",
+      "https://ufax24.com/2021/09/04/%e0%b8%95%e0%b8%b2%e0%b8%a3%e0%b8%b2%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%97%e0%b8%b3%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b8%a3%e0%b8%b9%e0%b9%89%e0%b8%88%e0%b8%b1%e0%b8%81%e0%b8%81%e0%b8%b1/",
+      "https://ufax24.com/2021/09/06/%e0%b8%97%e0%b8%b2%e0%b8%a2%e0%b8%9c%e0%b8%a5%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%97%e0%b8%b2%e0%b8%a2%e0%b8%9c%e0%b8%a5%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b9%81%e0%b8%a1%e0%b9%88/",
+      "https://ufax24.com/banned-os/",
+      "https://ufax24.com/blocked-request/",
+      "https://ufax24.com/2021/07/14/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b8%aa%e0%b8%b9%e0%b8%87%e0%b8%95%e0%b9%88%e0%b8%b3-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b9%84%e0%b8%8b%e0%b8%95/",
+      "https://ufax24.com/%e0%b8%9a%e0%b8%97%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1/",
+      "https://ufax24.com/2021/08/07/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%9e%e0%b8%a3%e0%b9%89%e0%b8%ad%e0%b8%a1%e0%b8%a5%e0%b8%b8%e0%b9%89%e0%b8%99%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%aa%e0%b8%b4%e0%b8%97%e0%b8%98/",
+      "https://ufax24.com/2021/07/17/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b8%aa%e0%b8%94-%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%82%e0%b8%ad%e0%b8%87%e0%b9%80%e0%b8%a3%e0%b8%b2%e0%b9%80%e0%b8%9b%e0%b9%87%e0%b8%99/",
+      "https://ufax24.com/2021/09/03/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b9%80%e0%b8%a5%e0%b9%88%e0%b8%99%e0%b8%87%e0%b9%88%e0%b8%b2%e0%b8%a2-%e0%b9%84%e0%b8%94%e0%b9%89%e0%b9%80%e0%b8%87%e0%b8%b4%e0%b8%99%e0%b8%88/",
+      "https://ufax24.com/tag/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5/",
+      "https://ufax24.com/2021/08/18/%e0%b8%a7%e0%b8%b4%e0%b8%98%e0%b8%b5%e0%b8%94%e0%b8%b9%e0%b8%a3%e0%b8%b2%e0%b8%84%e0%b8%b2%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%aa%e0%b8%b2%e0%b8%a1%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b8%97%e0%b8%b3%e0%b9%83/",
+      "https://ufax24.com/2021/07/29/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c-%e0%b8%aa%e0%b8%99%e0%b8%b8%e0%b8%81-%e0%b8%a5%e0%b8%b8%e0%b9%89%e0%b8%99/",
+      "https://ufax24.com/2021/08/09/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b8%ad/",
+      "https://ufax24.com/2021/08/03/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b9%80%e0%b8%81%e0%b8%a1%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b9%80%e0%b8%9e/",
+      "https://ufax24.com/2021/08/11/%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%94%e0%b8%b5%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%aa%e0%b8%b8%e0%b8%94%e0%b8%9d%e0%b8%b2%e0%b8%81/",
+      "https://ufax24.com/2021/07/16/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%9f%e0%b8%a3%e0%b8%b5%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%94%e0%b8%b4%e0%b8%95-%e0%b9%84%e0%b8%94%e0%b9%89%e0%b9%84%e0%b8%a1%e0%b9%88%e0%b8%a2/",
+      "https://ufax24.com/2021/08/20/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b9%80%e0%b8%81%e0%b8%a1%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%80%e0%b8%94%e0%b8%b4%e0%b8%a1%e0%b8%9e%e0%b8%b1%e0%b8%99%e0%b8%81%e0%b8%b5%e0%b8%ac/",
+      "https://ufax24.com/2021/07/20/%e0%b8%a7%e0%b8%b4%e0%b8%98%e0%b8%b5%e0%b8%94%e0%b8%b9-%e0%b8%a3%e0%b8%b2%e0%b8%84%e0%b8%b2%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%99%e0%b8%b1%e0%b8%81%e0%b8%9e%e0%b8%99%e0%b8%b1/",
+      "https://ufax24.com/2021/07/01/%e0%b8%84%e0%b8%b2%e0%b8%aa%e0%b8%b4%e0%b9%82%e0%b8%99-%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%84%e0%b8%99%e0%b8%97%e0%b8%b1%e0%b9%88%e0%b8%a7/",
+      "https://ufax24.com/2021/08/10/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c-%e0%b9%80%e0%b8%a5%e0%b8%b7%e0%b8%ad%e0%b8%81%e0%b9%80%e0%b8%a5%e0%b9%88%e0%b8%99%e0%b8%81%e0%b8%b1/",
+      "https://ufax24.com/ufabet/",
+      "https://ufax24.com/2021/08/12/501/",
+      "https://ufax24.com/%e0%b8%ab%e0%b8%a7%e0%b8%a2%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c/",
+      "https://ufax24.com/2021/09/02/%e0%b8%81%e0%b8%a3%e0%b8%b0%e0%b9%81%e0%b8%aa%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b8%99%e0%b8%b4%e0%b8%a2%e0%b8%a1%e0%b8%82%e0%b8%ad%e0%b8%87-%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%9e%e0%b8%99/",
+      "https://ufax24.com/banned-browser/",
+      "https://ufax24.com/2021/07/09/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b9%84%e0%b8%a1%e0%b9%88%e0%b8%a1%e0%b8%b5%e0%b8%82%e0%b8%b1%e0%b9%89%e0%b8%99%e0%b8%95%e0%b9%88%e0%b8%b3-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b9%80/",
+      "https://ufax24.com/2021/07/24/%e0%b8%9c%e0%b8%a5%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b9%84%e0%b8%8b%e0%b8%95%e0%b9%8c%e0%b9%80%e0%b8%8a%e0%b9%87%e0%b8%84-%e0%b8%ad%e0%b8%b1%e0%b8%9e%e0%b9%80%e0%b8%94/",
+      "https://ufax24.com/%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b9%88%e0%b8%ad%e0%b9%80%e0%b8%a3%e0%b8%b2/",
+      "https://ufax24.com/2021/07/22/%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a1%e0%b8%b5%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b8%a1%e0%b8%b1%e0%b9%88/",
+      "https://ufax24.com/2021/08/04/%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a3%e0%b8%a7%e0%b8%9a%e0%b8%a3%e0%b8%a7%e0%b8%a1%e0%b9%80%e0%b8%81%e0%b8%a1%e0%b8%81%e0%b8%b2/",
+      "https://ufax24.com/banned/",
+      "https://ufax24.com/2021/08/30/%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b9%80%e0%b8%95%e0%b9%87%e0%b8%87-%e0%b9%80%e0%b8%a5%e0%b9%88%e0%b8%99%e0%b8%87%e0%b9%88%e0%b8%b2%e0%b8%a2-%e0%b8%81%e0%b8%b3%e0%b9%84%e0%b8%a3%e0%b8%94%e0%b8%b5/",
+      "https://ufax24.com/2021/07/06/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b9%80%e0%b8%81%e0%b8%a1%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%80%e0%b8%94%e0%b8%b4%e0%b8%a1%e0%b9%83%e0%b8%99%e0%b8%a3%e0%b8%b9%e0%b8%9b/",
+      "https://ufax24.com/2021/08/02/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a1%e0%b8%b5%e0%b8%a3%e0%b8%b9%e0%b8%9b%e0%b9%81%e0%b8%9a%e0%b8%9a%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%ab%e0%b8%a5/",
+      "https://ufax24.com/2021/07/21/%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%ab%e0%b8%99%e0%b8%b6%e0%b9%88%e0%b8%87%e0%b9%83%e0%b8%99%e0%b8%8a%e0%b9%88%e0%b8%ad%e0%b8%87%e0%b8%97/",
+      "https://ufax24.com/2021/08/06/%e0%b8%97%e0%b8%b5%e0%b9%80%e0%b8%94%e0%b9%87%e0%b8%94%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%ad%e0%b8%b5%e0%b8%81%e0%b8%ab%e0%b8%99%e0%b8%b6%e0%b9%88%e0%b8%87%e0%b8%aa%e0%b8%b4%e0%b9%88%e0%b8%87%e0%b8%aa/",
+      "https://ufax24.com/2021/07/19/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b8%aa%e0%b9%80%e0%b8%95%e0%b9%87%e0%b8%9b-%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b8%a3%e0%b8%a7%e0%b8%a2%e0%b9%84%e0%b8%94%e0%b9%89%e0%b9%82%e0%b8%94/",
+      "https://ufax24.com/2021/07/31/%e0%b8%9c%e0%b8%a5%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%94%e0%b8%b9%e0%b9%80%e0%b8%9e%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b8%ab%e0%b8%b2%e0%b9%80%e0%b8%87%e0%b8%b4%e0%b8%99%e0%b8%88/",
+      "https://ufax24.com/tag/%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5/",
+      "https://ufax24.com/2021/08/13/%e0%b8%a7%e0%b8%b4%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%b2%e0%b8%b0%e0%b8%ab%e0%b9%8c%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%ad%e0%b8%b5%e0%b8%81%e0%b8%ab%e0%b8%99%e0%b8%b6%e0%b9%88%e0%b8%87%e0%b9%80%e0%b8%84/",
+      "https://ufax24.com/category/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5/",
+      "https://ufax24.com/",
+      "https://ufax24.com/2021/08/25/%e0%b8%97%e0%b8%b5%e0%b9%80%e0%b8%94%e0%b9%87%e0%b8%94%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%84%e0%b8%99%e0%b8%97%e0%b8%b1%e0%b9%88%e0%b8%a7/",
+      "https://ufax24.com/2021/08/05/%e0%b9%80%e0%b8%a5%e0%b9%88%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%a7%e0%b8%b4%e0%b8%98%e0%b8%b5%e0%b8%81%e0%b8%b2%e0%b8%a3-%e0%b8%a2%e0%b8%b1%e0%b8%87%e0%b9%84%e0%b8%87%e0%b9%83%e0%b8%ab%e0%b9%89/",
+      "https://ufax24.com/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b8%aa%e0%b9%80%e0%b8%95%e0%b9%87%e0%b8%9b/",
+      "https://ufax24.com/2021/07/03/%e0%b9%80%e0%b8%81%e0%b8%a1%e0%b8%a2%e0%b8%b4%e0%b8%87%e0%b8%9b%e0%b8%a5%e0%b8%b2-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a1%e0%b8%b5%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b9%81%e0%b8%95%e0%b8%81%e0%b8%95/",
+      "https://ufax24.com/%e0%b9%82%e0%b8%9b%e0%b8%a3%e0%b9%82%e0%b8%a1%e0%b8%8a%e0%b8%b1%e0%b9%88%e0%b8%99/",
+      "https://ufax24.com/2021/07/05/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c-%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%97%e0%b8%b5/",
+      "https://ufax24.com/2021/09/08/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%aa%e0%b8%a1%e0%b8%b1%e0%b8%84%e0%b8%a3%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad/",
+      "https://ufax24.com/2021/07/10/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b8%aa%e0%b9%80%e0%b8%95%e0%b9%87%e0%b8%9b-%e0%b8%ad%e0%b8%b5%e0%b8%81%e0%b8%ab%e0%b8%99%e0%b8%b6%e0%b9%88%e0%b8%87%e0%b8%a3%e0%b8%b9%e0%b8%9b/",
+      "https://ufax24.com/2021/08/24/%e0%b8%95%e0%b8%b2%e0%b8%a3%e0%b8%b2%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%aa%e0%b8%b3%e0%b8%ab%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%94%e0%b8%b9%e0%b9%81%e0%b8%a5/",
+      "https://ufax24.com/%e0%b8%aa%e0%b8%a5%e0%b9%87%e0%b8%ad%e0%b8%95%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c/",
+      "https://ufax24.com/2021/08/21/%e0%b8%9c%e0%b8%a5%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%ad%e0%b8%b1%e0%b8%9e/",
+      "https://ufax24.com/tag/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5/",
+      "https://ufax24.com/spam-ip/",
+      "https://ufax24.com/2021/08/19/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a1%e0%b8%b2%e0%b8%9e%e0%b8%a3%e0%b9%89/",
+      "https://ufax24.com/proxy-detected/",
+      "https://ufax24.com/2021/07/28/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%82%e0%b8%ad%e0%b8%87%e0%b9%80%e0%b8%a3%e0%b8%b2-%e0%b9%82%e0%b8%9b%e0%b8%a3/",
+      "https://ufax24.com/2021/08/27/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a1%e0%b8%b5%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95/",
+      "https://ufax24.com/banned-country/",
+      "https://ufax24.com/2021/08/23/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%9c%e0%b9%88%e0%b8%b2%e0%b8%99%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%96%e0%b8%b7%e0%b8%ad-%e0%b8%aa%e0%b8%99%e0%b8%b8%e0%b8%81-%e0%b8%95/",
+      "https://ufax24.com/2021/07/23/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%9e/",
+      "https://ufax24.com/%e0%b8%84%e0%b8%b2%e0%b8%aa%e0%b8%b4%e0%b9%82%e0%b8%99%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c/",
+      "https://ufax24.com/2021/07/08/%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%9d%e0%b8%b2%e0%b8%81-%e0%b8%96%e0%b8%ad%e0%b8%99/",
+      "https://ufax24.com/banned-referer/",
+      "https://ufax24.com/2021/09/07/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%97%e0%b8%b2%e0%b8%87%e0%b9%80%e0%b8%82%e0%b9%89%e0%b8%b2%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad/",
+      "https://ufax24.com/2021/06/30/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%a2%e0%b8%b9%e0%b9%82%e0%b8%a3-%e0%b8%9f%e0%b8%a3%e0%b8%b5%e0%b9%83%e0%b8%99%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%9e%e0%b8%99%e0%b8%b1/",
+      "https://ufax24.com/2021/08/14/%e0%b8%9c%e0%b8%a5%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a1%e0%b8%b5%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%ad%e0%b8%b1%e0%b8%9e%e0%b9%80%e0%b8%94/",
+      "https://ufax24.com/2021/07/02/%e0%b9%80%e0%b8%a5%e0%b9%88%e0%b8%99%e0%b9%80%e0%b8%aa%e0%b8%b7%e0%b8%ad%e0%b8%a1%e0%b8%b1%e0%b8%87%e0%b8%81%e0%b8%a3-%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c-%e0%b8%aa%e0%b8%b9/",
+      "https://ufax24.com/2021/08/26/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b9%84%e0%b8%94%e0%b9%89%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b8%99%e0%b8%b4/",
+      "https://ufax24.com/2021/08/31/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b9%84%e0%b8%94%e0%b9%89%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%a2%e0%b8%ad%e0%b8%a1/",
+      "https://ufax24.com/2021/07/13/%e0%b8%aa%e0%b8%a1%e0%b8%b1%e0%b8%84%e0%b8%a3%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b9%80/",
+      "https://ufax24.com/2021/07/07/%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%9a%e0%b8%ad%e0%b8%a5-%e0%b8%ad%e0%b8%ad%e0%b8%99%e0%b9%84%e0%b8%a5%e0%b8%99%e0%b9%8c-%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%80%e0%b8%a5%e0%b8%b7%e0%b8%ad%e0%b8%81/",
+      "https://ufax24.com/adblocker-detected/",
+      "https://ufax24.com/2021/08/28/%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99-%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a1%e0%b8%b5%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%9e%e0%b8%99%e0%b8%b1%e0%b8%99%e0%b8%95%e0%b9%88/",
+      "https://ufax24.com/2021/07/26/%e0%b9%81%e0%b8%97%e0%b8%87%e0%b8%9a%e0%b8%ad%e0%b8%a5%e0%b8%aa%e0%b9%80%e0%b8%95%e0%b9%87%e0%b8%9b-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a%e0%b8%82%e0%b8%ad%e0%b8%87%e0%b9%80/"];
+    const interval = 10;
+    let currentPage = 0;
+    const iframe = document.querySelector('iframe');
+    iframe.setAttribute('src', urls[0]);
+    window.setInterval(() => {
+      currentPage = (currentPage + 1) % urls.length;
+      iframe.setAttribute('src', urls[currentPage]);
+    }, interval * 1000);
+  </script>
+</body>
+</html>
