@@ -104,29 +104,101 @@
 	<link href="assets/css/custom.css" rel="stylesheet">
 </head>
 
-<body class="site-layout--horizontal preloader-is--active">
+<body class="site-layout--horizontal preloader-is--active" onload="listarticle()">
 
 	<div class="container">
 
 		<!-- Header
 		================================================== -->
-		<div data-include="header2"></div>
+		<!--<div data-include="head"></div>-->
 		<!-- Header / End -->
 
 		<!-- Content
 		================================================== -->
 		<main class="" id="">
+			<div class="" style="margin: 10%;">
 			
 			
-			<div data-include="ufax24"></div>
+				<div class="player__subtitle h6" style="color: aliceblue;">PRESENT BY UFATOP1.NET</div>
+				<h1 class="player__title h3 color-warning">อันดับเว็บไซด์ ที่ดีมาก</h1>
+				<div class="player__body">
+					<ul class="player__stats">
+							<div class="header-logo header-logo--img">
+								<i class="fab fa-new">&nbsp;</i><a href="https://ufax24.com/"><img src="https://ufax24.com/wp-content/uploads/2021/06/LOGO-UFAx24-X12-1.png" srcset="https://ufax24.com/wp-content/uploads/2021/06/LOGO-UFAx24-X12-1.png" style="width: 60px;padding: 5px;" alt="แทงบอลufax24"></a>
+								<a style="color: aliceblue;" href="https://ufax24.com/">แทงบอล</a>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+				<div id="post"></div>
+			</div>
 		</main>
-
+		
 		<!-- Overlay -->
 		<div class="site-overlay"></div>
 		<!-- Overlay / End -->
-
+		<!--<div data-include="menupanal"></div>-->
 		<!-- Cart Panel -->
-		
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script>
+			Array.prototype.randomElement = function () {
+				return this[Math.floor(Math.random() * this.length)];
+			}
+			async function listarticle() {
+			  try {
+				const response = await axios.get('https://ufax24.com/wp-json/wp/v2/posts?_fields[]=content&_fields[]=title&_fields[]=link&_fields[]=date_gmt');
+				var Data = response.data;
+				var setPost = [];
+				Data.forEach(function(element) {
+				var content = element.content.rendered;
+				var date_gmt = element.date_gmt;
+				var link = element.link;
+				var keywordss = ['แทงบอล','แทงบอล','ผลบอล', 'พนันออนไลน์', 'แนวทาง', 'วิธีเล่นบอลสเต็ป', 'สูตรบอลสเต็ปวันนี้', 'สูตรบอลชุด', 'ทีเด็ดบอลสเต็ป', 'แจกสูตรบอลชุด', 'ราคาบอล','ตารางบอล','ราคาบอล','เว็บแทงบอล','แทงบอลสเต็ป','แทงบอล','เว็บพนันบอล','ไม่มีขั้นต่ำ','แทงบอลufabet','ฟรีเครดิต','แทงบอลยังไง','พนันบอลดียังไง','ผลบอลเมื่อคืนนี้','เว็บแทงบอลUFABET','ผลบอลย้อนหลัง','โปรแกรมบอล','เช็คผลบอลล่าสุด'];
+				var color = ['color-warning','color-success','color-primary'];
+				var colorRandom = color[Math.floor(Math.random() * color.length)]
+				var title = element.title.rendered;
+				var imgs = content.match(/http[^>]*jpg/gm);
+				var listpost = 
+  
+				`<article class="post has-post-thumbnail">
+				  <div class="post__thumbnail">
+					  <a href="${link}"><img src="${imgs}" alt="${keywordss.randomElement()}"></a>
+				  </div>
+				  <div class="post__body">
+					  <div class="post__header">
+						  <ul class="post__cats list-unstyled">
+							  <li class="post__cats-item ${color.randomElement()}">
+								  <a href="${link}">${keywordss.randomElement()}</a>
+							  </li>
+						  </ul>
+						  <p class="post__title h6"><a href="${link}">${title}</a></p>
+						  <ul class="post__meta list-unstyled">
+							  <li class="post__meta-item post__meta-item--date">
+								  <a href="#">POSTED ON ${date_gmt} BY UFAX24</a>
+							  </li>
+						  </ul>
+					  </div>
+					  <div class="post__excerpt" style="color: aliceblue;">
+						  ${title}
+					  </div>
+				  </div>
+			  </article>`
+				setPost.push(listpost)
+				  
+				})
+				//console.log(setPost)
+				document.getElementById('post').insertAdjacentHTML('beforeend', setPost);
+				
+				//document.getElementById('postpic').appendChild(postpic);
+				//console.log(content);
+			  
+			  } catch (error) {
+				console.error(error);
+				 }
+			  }
+  
+		  </script>
 
 	<div class="preloader-overlay">
 		<div id="js-preloader" class="preloader">
@@ -139,6 +211,7 @@
 		</div>
 	</div>
 
+
 	<!-- The cursor elements -->
 	<div class="df-custom-cursor-wrap">
 		<div id="df-custom-cursor"></div>
@@ -147,7 +220,7 @@
 	<!-- Javascript Files
 	================================================== -->
 	<!-- Core JS -->
-	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<script src="assets/vendor/jquery/jquery.min.js"></script>
 	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
