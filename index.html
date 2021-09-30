@@ -190,12 +190,19 @@
 		}
 		.post__excerpt{
 			width: 100%;
+			margin-left: 25%;
 			font-size: medium;
 			color: #fff;
-			background-color:rgb(39, 37, 37) ;
+			
 		}
 		.post__meta {
 			color: #fff;
+		}
+		.h1,h2,h3,h4,h5,h6{
+			color: #FFF;
+		}
+		.humbnailpic{
+			width: 20px;
 		}
 		
 	</style>
@@ -245,15 +252,15 @@
 			var listpost = 
 
 			`<article class="post has-post-thumbnail">
-			  <div class="post__thumbnail" >
+			  <div class="humbnailpic" >
 				  <a href="${link}"><img src="${imgs}" alt="${title}-${date_gmt}"></a>
 			  </div>
 			  <div class="post__body">
 				  <div class="post__header">
 					  <ul class="post__cats list-unstyled">
-						  <li class="post__cats-item ${colorRandom}">
+						<p><li class="post__cats-item ${colorRandom}">
 							  <a href="${link}">${title}</a>
-						  </li>
+						  </li></p>
 					  </ul>
 					  <h2 class="post__title h6"><a href="${link}">${title}</a></h2>
 					  <ul class="post__meta list-unstyled">
