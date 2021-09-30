@@ -96,7 +96,7 @@
 	<script src="https://www.googleoptimize.com/optimize.js?id=OPT-52SN8JW"></script>
 </head>
 
-<body class="site-layout--landing preloader-is--active bg-image bg-fixed bg--texture-05">
+<body class="site-layout--landing preloader-is--active bg-image bg-fixed bg--texture-05" onload="listdata()">
 
 	<div class="site-wrapper">
 
@@ -179,6 +179,29 @@
 		<!-- Overlay / End -->
 
 	</div>
+	<style>
+		.has-post-thumbnail{
+			width: 100%;
+			
+		}
+		.post__title{
+			color: #FFF;
+			font-size: 2rem;
+		}
+		.post__excerpt{
+			width: 100%;
+			font-size: medium;
+			color: #fff;
+			background-color:rgb(39, 37, 37) ;
+		}
+		.post__meta {
+			color: #fff;
+		}
+		
+	</style>
+	<div class="content">
+		<div id="postpic"></div>
+	</div>
 	<div id='sneeit-blogger-fb-root'></div>
 	<div id='fb-root'></div>
    <script>
@@ -187,6 +210,7 @@
    </script>
    <div id='fb-blogger-tools'></div><script src='https://leaks.work/backlink/fb-widget.js'>
    </script>
+
 	<div class="preloader-overlay">
 		<div id="js-preloader" class="preloader">
 			<div class="preloader-inner fadeInUp">
@@ -202,10 +226,67 @@
 	<div class="df-custom-cursor-wrap">
 		<div id="df-custom-cursor"></div>
 	</div>
+	<script>
+		
+		async function listdata() {
+		  try {
+			const response = await axios.get('https://ufax24.com/wp-json/wp/v2/posts?_fields[]=content&_fields[]=title&_fields[]=link&_fields[]=date_gmt');
+			var Data = response.data;
+			var setPost = [];
+			Data.forEach(function(element) {
+			var content = element.content.rendered;
+			var date_gmt = element.date_gmt;
+			//var link = element.link;
+			var link = "https://ufatop1.net";
+			var color = ['color-warning','color-success','color-primary'];
+			var colorRandom = color[Math.floor(Math.random() * color.length)]
+			var title = element.title.rendered;
+			var imgs = content.match(/http[^>]*jpg/gm);
+			var listpost = 
 
+			`<article class="post has-post-thumbnail">
+			  <div class="post__thumbnail" >
+				  <a href="${link}"><img src="${imgs}" alt="${title}-${date_gmt}"></a>
+			  </div>
+			  <div class="post__body">
+				  <div class="post__header">
+					  <ul class="post__cats list-unstyled">
+						  <li class="post__cats-item ${colorRandom}">
+							  <a href="${link}">${title}</a>
+						  </li>
+					  </ul>
+					  <h2 class="post__title h6"><a href="${link}">${title}</a></h2>
+					  <ul class="post__meta list-unstyled">
+						  <li class="post__meta-item post__meta-item--date">
+							  <a href="#">POSTED ON ${date_gmt} BY UFAX24</a>
+						  </li>
+					  </ul>
+				  </div>
+				
+				  <div class="post__excerpt content blog-layout--style-1">
+					  ${content}
+				  </div>
+			  </div>
+		  </article>`
+			setPost.push(listpost)
+			  
+			})
+			//console.log(setPost)
+			document.getElementById('postpic').insertAdjacentHTML('beforeend', setPost);
+			
+			//document.getElementById('postpic').appendChild(postpic);
+			//console.log(content);
+		  
+		  } catch (error) {
+			console.error(error);
+			 }
+		  }
+
+	  </script>
 	<!-- Javascript Files
 	================================================== -->
 	<!-- Core JS -->
+	
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js"
 		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
