@@ -235,6 +235,7 @@
 		<h6>ผลบอล บทความ LiveScore สรุปข้อมูล</h6>
 		<br/><br/>
 	</div>
+	<div id="government"></div>
 		<div id="postpic"></div>
 	
 	<div id='sneeit-blogger-fb-root'></div>
@@ -261,6 +262,51 @@
 	<div class="df-custom-cursor-wrap">
 		<div id="df-custom-cursor"></div>
 	</div>
+	<script>
+
+$(document).ready(function() {
+	/* ================= ปฏิทินไทย  ================================================================= */
+		//$('.datepicker').datepicker({language:'th-th',format:'dd/mm/yyyy'})
+		  $.datetimepicker.setLocale('th'); // ต้องกำหนดเสมอถ้าใช้ภาษาไทย และ เป็นปี พ.ศ.
+			  var thaiYear = function (ct) {
+			var leap=3;
+			var dayWeek=["พฤ.", "ศ.", "ส.", "อา.","จ.", "อ.", "พ."];
+			if(ct){
+				var yearL=new Date(ct).getFullYear()-543;
+				leap=(((yearL % 4 == 0) && (yearL % 100 != 0)) || (yearL % 400 == 0))?2:3;
+				if(leap==2){
+					dayWeek=["ศ.", "ส.", "อา.", "จ.","อ.", "พ.", "พฤ."];
+				}
+			}
+			this.setOptions({
+				i18n:{ th:{dayOfWeek:dayWeek}},dayOfWeekStart:0,
+			})
+		};
+	
+		$("#awardsdate").datetimepicker({
+			timepicker:false,
+			format:'d/m/Y',  // กำหนดรูปแบบวันที่ ที่ใช้ เป็น 00-00-0000
+			lang:'th',  // แสดงภาษาไทย
+			onChangeMonth:thaiYear,
+			onShow:thaiYear,
+			yearOffset:543,  // ใช้ปี พ.ศ. บวก 543 เพิ่มเข้าไปในปี ค.ศ
+			closeOnDateSelect:true,
+		});
+	
+		$("#nextawardsdate").datetimepicker({
+			timepicker:false,
+			format:'d/m/Y',  // กำหนดรูปแบบวันที่ ที่ใช้ เป็น 00-00-0000
+			lang:'th',  // แสดงภาษาไทย
+			onChangeMonth:thaiYear,
+			onShow:thaiYear,
+			yearOffset:543,  // ใช้ปี พ.ศ. บวก 543 เพิ่มเข้าไปในปี ค.ศ
+			closeOnDateSelect:true,
+		});
+	
+	/* =========================================================================================== */
+	
+	});
+	</script>
 	<script>
 		
 		async function listdata() {
